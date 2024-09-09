@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Em Obra </h1>
+        <form id="form-pesquisa">
+            <input type="text" placeholder="Pesquisar materiais...">
+            <button type="submit">Pesquisar</button>
+        </form>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Material.html">Materiais de Construção</a></li>
+                <li><a href="sobre.html">Sobre a Loja</a></li>
+                <li><a href="contato.html">entre em contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="conteudo">
+        <section id="contato">
+            <header>
+                <h1>Formulário de Contato</h1>
+
+                <fieldset id="id_usuario">
+                    <legend>Identificação do Usuário</legend>
+                    <p>
+                        <label for="cNome">Nome:</label>
+                        <input type="text" name="tNome" id="cNome" size="50" maxlength="50" placeholder="Nome Completo" >
+                    </p>
+
+                    <p>
+                        <label for="cEmail">E-mail:</label>
+                        <input type="email" name="eEmail" id="cEmail" size="50" maxlength="50" placeholder="Seu e-mail" >
+                    </p>
+
+                    <p>
+                        <label for="cTelefone">Telefone:</label>
+                        <input type="tel" name="tTelefone" id="cTelefone" size="20" maxlength="15" placeholder="(XX) XXXX-XXXX" >
+                    </p>
+                </fieldset>
+
+
+                    <p>
+                        <label for="cEst">Estado:</label>
+                        <select name="tEst" id="cEst" >
+                            <optgroup label="Região Centro-Oeste">
+                                <option value="Brasília">Brasília</option>
+                                <option value="Goiás" selected>Goiás</option>
+                                <option value="Mato Grosso">Mato Grosso</option>
+                                <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                            </optgroup>
+                            <optgroup label="Região Sul">
+                                <option value="Paraná">Paraná</option>
+                                <option value="Santa Catarina">Santa Catarina</option>
+                                <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                            </optgroup>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="cCid">Cidade:</label>
+                        <input type="text" name="tCid" id="cCid" maxlength="40" size="30" placeholder="Sua cidade" list="cidades">
+
+                    </p>
+                </fieldset>
+
+                    <p>
+                        <label for="cxMsn">Escreva sua mensagem:</label>
+                    </p>
+                    <textarea name="tMsn" id="cxMsn" cols="50" rows="5" maxlength="200" placeholder="Digite sua mensagem aqui..." required></textarea>
+                </fieldset>
+
+                <p>
+                    <input type="submit" value="Enviar">
+                </p>
+            </form>
+        </section>
+    </div>
+
+
+    <footer>
+        <h3>Solicitar Orçamento</h3>
+
+        <form id="form-orcamento">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" size="30" maxlength="50">
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Seu email" size="50" maxlength="50">
+    
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXX-XXXX" size="20" maxlength="10">
+    
+        <label for="servico">Serviço Solicitado:</label>
+        <select id="servico" name="servico" required>
+            <option value="">Selecione um serviço</option>
+            <option value="reforma">Reforma</option>
+            <option value="construcao">Construção</option>
+            <option value="acabamento">Acabamento</option>
+        </select>
+    
+        <label for="descricao">Descrição do Orçamento:</label>
+        <textarea id="descricao" name="descricao" placeholder="Descreva o que você precisa" required></textarea>
+    
+        <button type="submit">Enviar Orçamento</button>
+    </form>
+    <address>desenvolvido por lais &copy;</address>
+    </footer>
+    
+</body>
+</html>

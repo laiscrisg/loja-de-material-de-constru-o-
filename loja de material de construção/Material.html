@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materiais de Construção</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Em Obra</h1>
+        <form id="form-pesquisa">
+            <input type="text" placeholder="Pesquisar materiais...">
+            <button type="submit">Pesquisar</button>
+        </form>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Material.html">Materiais de Construção</a></li>
+                <li><a href="sobre.html">Sobre a Loja</a></li>
+                <li><a href="contato.html">entre em contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section id="galeria">
+        <h2>Nossos Materiais</h2><br>
+
+        <h3>Banheiro</h3><br>
+        <div class="fotos">
+
+            
+            <img src="imagens/img1.jpeg" alt="Material 1">
+            <img src="imagens/img2.jpeg" alt="Material 2">
+            <img src="imagens/img3.jpeg" alt="Material 3">
+            <img src="imagens/img4.jpeg" alt="Material 4">
+            <img src="imagens/img5.png" alt="Material 5">
+            <img src="imagens/img6.jpeg" alt="Material 6">
+            <img src="imagens/img7.png" alt="Material 7">
+            <img src="imagens/img8.png" alt="Material 8">
+            <img src="imagens/img9.jpeg" alt="Material 9">
+            <img src="imagens/img10.png" alt="Material 10">
+            <img src="imagens/img11.png" alt="Material 11">
+            <img src="imagens/img12.jpg" alt="Material 12">
+            <img src="imagens/img13.jpeg" alt="Material 13">
+            <img src="imagens/img14.jpg" alt="Material 14">
+            <img src="imagens/img15.jpeg" alt="Material 15">
+        </div>
+        
+    </section>
+    <footer>
+        <h3>Solicitar Orçamento</h3>
+
+        <form id="form-orcamento">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" size="30" maxlength="50">
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Seu email" size="50" maxlength="50">
+    
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXX-XXXX" size="20" maxlength="10">
+    
+        <label for="servico">Serviço Solicitado:</label>
+        <select id="servico" name="servico" required>
+            <option value="">Selecione um serviço</option>
+            <option value="reforma">Reforma</option>
+            <option value="construcao">Construção</option>
+            <option value="acabamento">Acabamento</option>
+        </select>
+    
+        <label for="descricao">Descrição do Orçamento:</label>
+        <textarea id="descricao" name="descricao" placeholder="Descreva o que você precisa" required></textarea>
+    
+        <button type="submit">Enviar Orçamento</button>
+    </form>
+    <address>desenvolvido por lais &copy;</address>
+    </footer>
+    
+</body>
+</html>
